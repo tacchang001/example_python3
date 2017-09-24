@@ -1,0 +1,22 @@
+{
+    "version": "0.1.0",
+    "command": "cmd",
+    "isShellCommand": true,
+    "args": ["/c"],
+    "showOutput": "always",
+    "tasks": [
+        {
+            "taskName": "run",
+            "suppressTaskName": true,
+            "isBuildCommand": true,
+            "args": [
+                "python ${file}"
+            ]
+        }
+    ],
+    "options": {
+        "env": {
+            "PYTHONIOENCODING": "UTF-8"
+        }
+    }
+}
